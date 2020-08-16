@@ -1,0 +1,3515 @@
+Service2020/08/13 16:45:50 users.go:57: login: password mismatch: crypto/bcrypt: hashedPassword is not the hash of the given password(main.User) {
+ ID: (uint) 1,
+ CreatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "24326124313024687033392f757a667a4753564669644d45677075594f4b2f5166447031546c30716b6b734a72656634617a762f6f4a596e3349344f"
+}
+(main.UserLoginRequestForm) {
+ Email: (string) "",
+ Password: (string) ""
+}
+
+Service2020/08/13 16:50:07 users.go:84: register: user duplicated: existing (main.User) {
+ ID: (uint) 1,
+ CreatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "24326124313024687033392f757a667a4753564669644d45677075594f4b2f5166447031546c30716b6b734a72656634617a762f6f4a596e3349344f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/13 20:17:14 users.go:84: register: user duplicated: existing (main.User) {
+ ID: (uint) 1,
+ CreatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "24326124313024687033392f757a667a4753564669644d45677075594f4b2f5166447031546c30716b6b734a72656634617a762f6f4a596e3349344f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/13 20:17:59 users.go:84: register: user duplicated: existing (main.User) {
+ ID: (uint) 1,
+ CreatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-13 16:44:04 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "24326124313024687033392f757a667a4753564669644d45677075594f4b2f5166447031546c30716b6b734a72656634617a762f6f4a596e3349344f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/14 11:07:20 main.go:31: initializing configuration...
+Service2020/08/14 11:07:20 main.go:38: initialized configuration as following:
+Service2020/08/14 11:07:20 main.go:41: connecting to database...
+Service2020/08/14 11:07:20 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:07:20 main.go:60: initializing echo router...
+Service2020/08/14 11:07:20 main.go:105: setup completed. starting up server...
+Service2020/08/14 11:13:41 main.go:31: initializing configuration...
+Service2020/08/14 11:13:41 main.go:38: initialized configuration as following:
+Service2020/08/14 11:13:41 main.go:41: connecting to database...
+Service2020/08/14 11:13:41 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:13:41 main.go:60: initializing echo router...
+Service2020/08/14 11:13:41 main.go:105: setup completed. starting up server...
+Service2020/08/14 11:15:25 main.go:31: initializing configuration...
+Service2020/08/14 11:15:25 main.go:38: initialized configuration as following:
+Service2020/08/14 11:15:25 main.go:41: connecting to database...
+Service2020/08/14 11:15:25 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:15:25 main.go:60: initializing echo router...
+Service2020/08/14 11:15:25 main.go:105: setup completed. starting up server...
+Service2020/08/14 11:24:14 main.go:31: initializing configuration...
+Service2020/08/14 11:24:14 main.go:38: initialized configuration as following:
+Service2020/08/14 11:24:14 main.go:41: connecting to database...
+Service2020/08/14 11:24:14 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:24:14 main.go:60: initializing echo router...
+Service2020/08/14 11:24:14 main.go:105: setup completed. starting up server...
+Service2020/08/14 11:26:59 main.go:31: initializing configuration...
+Service2020/08/14 11:26:59 main.go:38: initialized configuration as following:
+Service2020/08/14 11:26:59 main.go:41: connecting to database...
+Service2020/08/14 11:26:59 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:26:59 main.go:60: initializing echo router...
+Service2020/08/14 11:26:59 main.go:105: setup completed. starting up server...
+Service2020/08/14 11:27:30 email.go:39: email: failed to send email dial tcp: i/o timeout
+Service2020/08/14 11:27:30 auth.go:117: register: failed to send register email verification: (*net.OpError)(0xc000366190)(dial tcp: i/o timeout)
+
+Service2020/08/14 11:27:37 auth.go:91: register: user duplicated: existing (main.User) {
+ ID: (uint) 4,
+ CreatedAt: (time.Time) 2020-08-14 11:27:20 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-14 11:27:20 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=22) "galvingaoper@gmail.com",
+ Password: (string) (len=120) "24326124313024395a3452716e78787059494c67587530366b58654c4f69514c6a6c6132417830636d4b726e63626e62512e47787839747639466c61"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=22) "galvingaoper@gmail.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/14 11:30:05 main.go:31: initializing configuration...
+Service2020/08/14 11:30:05 main.go:38: initialized configuration as following:
+Service2020/08/14 11:30:05 main.go:41: connecting to database...
+Service2020/08/14 11:30:05 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:30:05 main.go:60: initializing echo router...
+Service2020/08/14 11:30:05 main.go:105: setup completed. starting up server...
+Service2020/08/14 11:30:14 email.go:39: email: failed to send email dial tcp: lookup smtpdm.aliyun.com: no such host
+Service2020/08/14 11:30:14 auth.go:100: register: failed to send register email verification: (*net.OpError)(0xc000320cd0)(dial tcp: lookup smtpdm.aliyun.com: no such host)
+
+Service2020/08/14 11:30:17 email.go:39: email: failed to send email dial tcp: lookup smtpdm.aliyun.com: no such host
+Service2020/08/14 11:30:17 auth.go:100: register: failed to send register email verification: (*net.OpError)(0xc000306230)(dial tcp: lookup smtpdm.aliyun.com: no such host)
+
+Service2020/08/14 11:34:49 main.go:31: initializing configuration...
+Service2020/08/14 11:34:49 main.go:38: initialized configuration as following:
+Service2020/08/14 11:34:49 main.go:41: connecting to database...
+Service2020/08/14 11:34:49 main.go:50: database connected & auto migrated...
+Service2020/08/14 11:34:49 main.go:60: initializing echo router...
+Service2020/08/14 11:34:49 main.go:105: setup completed. starting up server...
+Service2020/08/14 12:09:24 main.go:31: initializing configuration...
+Service2020/08/14 12:09:24 main.go:38: initialized configuration as following:
+Service2020/08/14 12:09:24 main.go:41: connecting to database...
+Service2020/08/14 12:09:24 main.go:50: database connected & auto migrated...
+Service2020/08/14 12:09:24 main.go:60: initializing echo router...
+Service2020/08/14 12:09:24 main.go:106: setup completed. starting up server...
+Service2020/08/14 12:10:04 email.go:39: email: failed to send email dial tcp: i/o timeout
+Service2020/08/14 12:10:04 auth.go:148: register: failed to send register email verification: (*net.OpError)(0xc0003685a0)(dial tcp: i/o timeout)
+
+Service2020/08/14 12:10:04 auth.go:162: register: database transaction error (main.User) {
+ ID: (uint) 0,
+ CreatedAt: (time.Time) 0001-01-01 00:00:00 +0000 UTC,
+ UpdatedAt: (time.Time) 0001-01-01 00:00:00 +0000 UTC,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "24326124313024335555736f47656c6e67666e71536b2f5363575a464f54676a7067332e5142456b423164777146452f373172592f5361352f615461"
+}
+
+Service2020/08/14 12:14:47 main.go:31: initializing configuration...
+Service2020/08/14 12:14:47 main.go:38: initialized configuration as following:
+Service2020/08/14 12:14:47 main.go:41: connecting to database...
+Service2020/08/14 12:14:48 main.go:50: database connected & auto migrated...
+Service2020/08/14 12:14:48 main.go:60: initializing echo router...
+Service2020/08/14 12:14:48 main.go:106: setup completed. starting up server...
+Service2020/08/14 16:58:48 main.go:32: initializing configuration...
+Service2020/08/14 16:58:48 main.go:39: initialized configuration as following:
+Service2020/08/14 16:58:48 main.go:42: connecting to database...
+Service2020/08/14 16:58:48 main.go:51: database connected & auto migrated...
+Service2020/08/14 16:58:48 main.go:61: initializing echo router...
+Service2020/08/14 16:58:48 main.go:108: setup completed. starting up server...
+Service2020/08/14 17:24:48 main.go:32: initializing configuration...
+Service2020/08/14 17:24:48 main.go:39: initialized configuration as following:
+Service2020/08/14 17:24:48 main.go:42: connecting to database...
+Service2020/08/14 17:24:48 main.go:51: database connected & auto migrated...
+Service2020/08/14 17:24:48 main.go:61: initializing echo router...
+Service2020/08/14 17:24:48 main.go:108: setup completed. starting up server...
+Service2020/08/14 17:26:31 main.go:32: initializing configuration...
+Service2020/08/14 17:26:31 main.go:39: initialized configuration as following:
+Service2020/08/14 17:26:31 main.go:42: connecting to database...
+Service2020/08/14 17:26:31 main.go:51: database connected & auto migrated...
+Service2020/08/14 17:26:31 main.go:61: initializing echo router...
+Service2020/08/14 17:26:31 main.go:108: setup completed. starting up server...
+Service2020/08/14 17:30:53 main.go:32: initializing configuration...
+Service2020/08/14 17:30:53 main.go:39: initialized configuration as following:
+Service2020/08/14 17:30:53 main.go:42: connecting to database...
+Service2020/08/14 17:30:53 main.go:51: database connected & auto migrated...
+Service2020/08/14 17:30:53 main.go:61: initializing echo router...
+Service2020/08/14 17:30:53 main.go:108: setup completed. starting up server...
+Service2020/08/14 17:32:29 main.go:32: initializing configuration...
+Service2020/08/14 17:32:29 main.go:39: initialized configuration as following:
+Service2020/08/14 17:32:29 main.go:42: connecting to database...
+Service2020/08/14 17:32:29 main.go:51: database connected & auto migrated...
+Service2020/08/14 17:32:29 main.go:61: initializing echo router...
+Service2020/08/14 17:32:29 main.go:108: setup completed. starting up server...
+Service2020/08/14 18:09:17 auth.go:110: register: user duplicated: existing (main.User) {
+ ID: (uint) 6,
+ CreatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "243261243130244b75745a796331664d6d4c333849665835445530366547315439377169686c784c794436374e483239474671594872795565504e4f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/14 18:09:19 auth.go:110: register: user duplicated: existing (main.User) {
+ ID: (uint) 6,
+ CreatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "243261243130244b75745a796331664d6d4c333849665835445530366547315439377169686c784c794436374e483239474671594872795565504e4f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/14 18:09:20 auth.go:110: register: user duplicated: existing (main.User) {
+ ID: (uint) 6,
+ CreatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "243261243130244b75745a796331664d6d4c333849665835445530366547315439377169686c784c794436374e483239474671594872795565504e4f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/14 19:55:06 auth.go:110: register: user duplicated: existing (main.User) {
+ ID: (uint) 6,
+ CreatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-14 12:12:06 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "243261243130244b75745a796331664d6d4c333849665835445530366547315439377169686c784c794436374e483239474671594872795565504e4f"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/14 19:57:40 auth.go:110: register: user duplicated: existing (main.User) {
+ ID: (uint) 5,
+ CreatedAt: (time.Time) 2020-08-14 11:35:31 +0800 CST,
+ UpdatedAt: (time.Time) 2020-08-14 11:35:31 +0800 CST,
+ DeletedAt: (*time.Time)(<nil>),
+ Username: (string) (len=22) "galvingaoper@gmail.com",
+ Password: (string) (len=120) "243261243130246650425a67503656383833642f484a4c307257616665474c7252624a4132767063646a324a474258636e473975635239414654734b"
+}
+, attempting (main.UserRegisterRequestForm) {
+ Email: (string) (len=22) "galvingaoper@gmail.com",
+ Password: (string) (len=13) "GalvinGao2002"
+}
+
+Service2020/08/16 04:11:03 main.go:32: initializing configuration...
+Service2020/08/16 04:11:03 main.go:39: initialized configuration as following:
+Service2020/08/16 04:11:03 main.go:42: connecting to database...
+Service2020/08/16 04:11:03 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:11:03 main.go:61: initializing echo router...
+Service2020/08/16 04:11:03 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:19:00 auth.go:55: login: found user error: (*errors.errorString)(0xc000138bc0)(record not found)
+
+Service2020/08/16 04:40:12 main.go:32: initializing configuration...
+Service2020/08/16 04:40:12 main.go:39: initialized configuration as following:
+Service2020/08/16 04:40:12 main.go:42: connecting to database...
+Service2020/08/16 04:40:12 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:40:12 main.go:61: initializing echo router...
+Service2020/08/16 04:40:12 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:41:49 main.go:32: initializing configuration...
+Service2020/08/16 04:41:49 main.go:39: initialized configuration as following:
+Service2020/08/16 04:41:49 main.go:42: connecting to database...
+Service2020/08/16 04:41:49 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:41:49 main.go:61: initializing echo router...
+Service2020/08/16 04:41:49 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:42:19 main.go:32: initializing configuration...
+Service2020/08/16 04:42:19 main.go:39: initialized configuration as following:
+Service2020/08/16 04:42:19 main.go:42: connecting to database...
+Service2020/08/16 04:42:19 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:42:19 main.go:61: initializing echo router...
+Service2020/08/16 04:42:19 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:44:34 main.go:32: initializing configuration...
+Service2020/08/16 04:44:34 main.go:39: initialized configuration as following:
+Service2020/08/16 04:44:34 main.go:42: connecting to database...
+Service2020/08/16 04:44:34 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:44:34 main.go:61: initializing echo router...
+Service2020/08/16 04:44:34 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:52:58 main.go:32: initializing configuration...
+Service2020/08/16 04:52:58 main.go:39: initialized configuration as following:
+Service2020/08/16 04:52:58 main.go:42: connecting to database...
+Service2020/08/16 04:52:58 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:52:58 main.go:61: initializing echo router...
+Service2020/08/16 04:52:58 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:54:02 main.go:32: initializing configuration...
+Service2020/08/16 04:54:02 main.go:39: initialized configuration as following:
+Service2020/08/16 04:54:02 main.go:42: connecting to database...
+Service2020/08/16 04:54:02 main.go:51: database connected & auto migrated...
+Service2020/08/16 04:54:02 main.go:61: initializing echo router...
+Service2020/08/16 04:54:02 main.go:108: setup completed. starting up server...
+Service2020/08/16 04:55:21 main.go:32: initializing configuration...
+Service2020/08/16 04:55:21 main.go:39: initialized configuration as following:
+Service2020/08/16 04:55:21 main.go:42: connecting to database...
+Service2020/08/16 04:55:21 main.go:53: database connected & auto migrated...
+Service2020/08/16 04:55:21 main.go:63: initializing echo router...
+Service2020/08/16 04:55:21 main.go:110: setup completed. starting up server...
+Service2020/08/16 04:56:09 main.go:32: initializing configuration...
+Service2020/08/16 04:56:09 main.go:39: initialized configuration as following:
+Service2020/08/16 04:56:09 main.go:42: connecting to database...
+Service2020/08/16 04:56:09 main.go:53: database connected & auto migrated...
+Service2020/08/16 04:56:09 main.go:63: initializing echo router...
+Service2020/08/16 04:56:09 main.go:110: setup completed. starting up server...
+Service2020/08/16 04:58:25 main.go:32: initializing configuration...
+Service2020/08/16 04:58:25 main.go:39: initialized configuration as following:
+Service2020/08/16 04:58:25 main.go:42: connecting to database...
+Service2020/08/16 04:58:25 main.go:53: database connected & auto migrated...
+Service2020/08/16 04:58:25 main.go:63: initializing echo router...
+Service2020/08/16 04:58:25 main.go:110: setup completed. starting up server...
+Service2020/08/16 05:03:20 main.go:32: initializing configuration...
+Service2020/08/16 05:03:20 main.go:39: initialized configuration as following:
+Service2020/08/16 05:03:20 main.go:42: connecting to database...
+Service2020/08/16 05:03:20 main.go:53: database connected & auto migrated...
+Service2020/08/16 05:03:20 main.go:63: initializing echo router...
+Service2020/08/16 05:03:20 main.go:111: setup completed. starting up server...
+Service2020/08/16 05:06:01 main.go:32: initializing configuration...
+Service2020/08/16 05:06:01 main.go:39: initialized configuration as following:
+Service2020/08/16 05:06:01 main.go:42: connecting to database...
+Service2020/08/16 05:06:01 main.go:53: database connected & auto migrated...
+Service2020/08/16 05:06:01 main.go:63: initializing echo router...
+Service2020/08/16 05:06:01 main.go:111: setup completed. starting up server...
+Service2020/08/16 05:07:09 main.go:32: initializing configuration...
+Service2020/08/16 05:07:09 main.go:39: initialized configuration as following:
+Service2020/08/16 05:07:09 main.go:42: connecting to database...
+Service2020/08/16 05:07:09 main.go:53: database connected & auto migrated...
+Service2020/08/16 05:07:09 main.go:63: initializing echo router...
+Service2020/08/16 05:07:09 main.go:111: setup completed. starting up server...
+Service2020/08/16 09:41:21 main.go:32: initializing configuration...
+Service2020/08/16 09:41:21 main.go:39: initialized configuration as following:
+Service2020/08/16 09:41:21 main.go:42: connecting to database...
+Service2020/08/16 09:41:21 main.go:53: database connected & auto migrated...
+Service2020/08/16 09:41:21 main.go:63: initializing echo router...
+Service2020/08/16 09:41:21 main.go:111: setup completed. starting up server...
+Service2020/08/16 09:47:31 main.go:32: initializing configuration...
+Service2020/08/16 09:47:31 main.go:39: initialized configuration as following:
+Service2020/08/16 09:47:31 main.go:42: connecting to database...
+Service2020/08/16 09:47:31 main.go:53: database connected & auto migrated...
+Service2020/08/16 09:47:31 main.go:63: initializing echo router...
+Service2020/08/16 09:47:31 main.go:111: setup completed. starting up server...
+Service2020/08/16 10:20:44 auth.go:61: login: found user error: (*errors.errorString)(0xc000150ba0)(record not found)
+
+Service2020/08/16 10:20:52 auth.go:61: login: found user error: (*errors.errorString)(0xc000150ba0)(record not found)
+
+Service2020/08/16 10:20:58 auth.go:72: login: password mismatch: crypto/bcrypt: hashedPassword is not the hash of the given password(main.User) {
+ DBSafeModel: (main.DBSafeModel) {
+  ID: (uint) 8,
+  CreatedAt: (time.Time) 2020-08-16 04:20:26 +0800 CST,
+  UpdatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+  DeletedAt: (*time.Time)(<nil>)
+ },
+ Username: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=120) "243261243130244669752e474e4b4465684243543951415a443377754f6b2e6766474a4c662f3472365331735171477934714d42644c7a76447a6161",
+ Schools: ([]*main.School) (len=2 cap=2) {
+  (*main.School)(0xc0004361c0)({
+   DBSafeModelWithTime: (main.DBSafeModelWithTime) {
+    ID: (uint) 1,
+    CreatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    UpdatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    DeletedAt: (*time.Time)(<nil>)
+   },
+   Name: (string) (len=21) "杭州市第一中学",
+   AlternateName: (string) (len=9) "杭一中",
+   Location: (string) (len=6) "杭州"
+  }),
+  (*main.School)(0xc000436230)({
+   DBSafeModelWithTime: (main.DBSafeModelWithTime) {
+    ID: (uint) 2,
+    CreatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    UpdatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    DeletedAt: (*time.Time)(<nil>)
+   },
+   Name: (string) (len=21) "杭州市第二中学",
+   AlternateName: (string) (len=9) "杭二中",
+   Location: (string) (len=6) "杭州"
+  })
+ },
+ Tags: ([]*main.Tag) (len=2 cap=2) {
+  (*main.Tag)(0xc000035e00)({
+   DBSafeModelWithTime: (main.DBSafeModelWithTime) {
+    ID: (uint) 1,
+    CreatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    UpdatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    DeletedAt: (*time.Time)(<nil>)
+   },
+   Name: (string) (len=12) "前端开发",
+   Description: (string) (len=24) "就，就前端开发嘛"
+  }),
+  (*main.Tag)(0xc000035ec0)({
+   DBSafeModelWithTime: (main.DBSafeModelWithTime) {
+    ID: (uint) 2,
+    CreatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    UpdatedAt: (time.Time) 2020-08-16 04:58:26 +0800 CST,
+    DeletedAt: (*time.Time)(<nil>)
+   },
+   Name: (string) (len=12) "后端开发",
+   Description: (string) (len=21) "后端开发嘛诶嘿"
+  })
+ }
+}
+(main.UserLoginRequestForm) {
+ Email: (string) (len=17) "2403901511@qq.com",
+ Password: (string) (len=12) "asdfasdfasdf"
+}
+
+Service2020/08/16 14:57:49 main.go:32: initializing configuration...
+Service2020/08/16 14:57:49 main.go:39: initialized configuration as following:
+Service2020/08/16 14:57:49 main.go:42: connecting to database...
+Service2020/08/16 14:57:49 main.go:53: database connected & auto migrated...
+Service2020/08/16 14:57:49 main.go:63: initializing echo router...
+Service2020/08/16 14:57:49 main.go:111: setup completed. starting up server...
+Service2020/08/16 15:02:25 main.go:32: initializing configuration...
+Service2020/08/16 15:02:25 main.go:39: initialized configuration as following:
+Service2020/08/16 15:02:25 main.go:42: connecting to database...
+Service2020/08/16 15:02:25 main.go:53: database connected & auto migrated...
+Service2020/08/16 15:02:25 main.go:63: initializing echo router...
+Service2020/08/16 15:02:25 main.go:120: setup completed. starting up server...
+Service2020/08/16 15:05:00 main.go:32: initializing configuration...
+Service2020/08/16 15:05:00 main.go:39: initialized configuration as following:
+Service2020/08/16 15:05:00 main.go:42: connecting to database...
+Service2020/08/16 15:05:00 main.go:53: database connected & auto migrated...
+Service2020/08/16 15:05:00 main.go:63: initializing echo router...
+Service2020/08/16 15:05:00 main.go:112: setup completed. starting up server...
+Service2020/08/16 15:05:00 main.go:114: Registered Routers: ([]*echo.Route) (len=87 cap=87) {
+ (*echo.Route)(0xc000315410)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003154d0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315710)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a390)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a4b0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a810)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b200)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315b00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315c80)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b080)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003152f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315a40)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315bc0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315da0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315e60)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315f80)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a120)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ab10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc00039ac00)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039acc0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315290)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a5d0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a690)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039aa50)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ab70)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc00039ae40)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039af60)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039afc0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315b60)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a180)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a240)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc00039aea0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003158f0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315c20)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a6f0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315650)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315230)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000315530)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315770)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315ec0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a1e0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc00039a870)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b1a0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b320)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315470)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315aa0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a3f0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a7b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b380)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc0003155f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003157d0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003159b0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a0c0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a330)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a510)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039aab0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc00039ad20)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315350)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003153b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315830)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a2a0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc00039a570)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a750)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003156b0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315950)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a450)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a630)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a990)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a9f0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ad80)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b020)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315590)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a060)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a930)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ac60)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b140)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b2c0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315890)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315f20)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a000)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ade0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315ce0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315d40)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315e00)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a8d0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b0e0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039b260)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
+Service2020/08/16 15:08:32 main.go:32: initializing configuration...
+Service2020/08/16 15:08:32 main.go:39: initialized configuration as following:
+Service2020/08/16 15:08:32 main.go:42: connecting to database...
+Service2020/08/16 15:08:32 main.go:53: database connected & auto migrated...
+Service2020/08/16 15:08:32 main.go:63: initializing echo router...
+Service2020/08/16 15:08:32 main.go:112: setup completed. starting up server...
+Service2020/08/16 15:08:32 main.go:114: Registered Routers: ([]*echo.Route) (len=87 cap=87) {
+ (*echo.Route)(0xc000311b00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc0003ac0f0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003acb40)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310b10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000310c30)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311bf0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac8a0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003acc00)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311110)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003111d0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311560)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac150)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac5a0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310c90)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310e10)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311d70)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311320)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311800)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311e30)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac780)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310f30)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310ff0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311290)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311620)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311ef0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac330)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac660)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac960)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac9c0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003aca20)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310b70)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310d50)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310db0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310f90)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311680)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003118c0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311a40)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311d10)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003acc60)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc0003aca80)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310bd0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003115c0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311980)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311c50)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311dd0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac3f0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc0003acba0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310cf0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311230)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311920)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311aa0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc000311e90)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac450)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc0003ac540)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003113e0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311500)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311740)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003119e0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311b60)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc000311fb0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac900)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000310e70)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311050)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003117a0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac030)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac390)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000310ed0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003110b0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311170)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003114a0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac090)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac1b0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac4e0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac840)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311380)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003116e0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311f50)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac210)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac600)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311860)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac270)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac2d0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac6c0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003acae0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311440)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000311cb0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003ac720)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
+Service2020/08/16 15:09:15 main.go:32: initializing configuration...
+Service2020/08/16 15:09:15 main.go:39: initialized configuration as following:
+Service2020/08/16 15:09:15 main.go:42: connecting to database...
+Service2020/08/16 15:09:15 main.go:53: database connected & auto migrated...
+Service2020/08/16 15:09:15 main.go:63: initializing echo router...
+Service2020/08/16 15:09:15 main.go:112: setup completed. starting up server...
+Service2020/08/16 15:09:15 main.go:114: Registered Routers: ([]*echo.Route) (len=87 cap=87) {
+ (*echo.Route)(0xc000315800)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315b00)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315f20)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc00039c1b0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315050)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003152f0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003155f0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315aa0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315b60)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315da0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c210)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c8a0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315110)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003151d0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cb40)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ccc0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000314ff0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003153b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000314ed0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000314f30)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315740)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315920)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315bc0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c570)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c5d0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315410)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315590)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c3f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c6f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c750)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000315350)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c030)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c4b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c900)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cc00)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000314f90)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315530)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ca20)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cc60)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315e00)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c690)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003158c0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315c20)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315d40)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315ec0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc00039ca80)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cd20)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cde0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315290)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315980)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c630)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315c80)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c390)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c450)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c810)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc00039c960)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cae0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039d020)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc000315230)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c330)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c090)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c510)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ce40)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cea0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cfc0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003157a0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315fb0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c150)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315a40)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315e60)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc00039c2d0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c9c0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cf00)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315650)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315860)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315ce0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c0f0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c7b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc0003150b0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003154d0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003156e0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003159e0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039c270)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cd80)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039cf60)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315170)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000315470)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
+Service2020/08/16 15:34:01 main.go:32: initializing configuration...
+Service2020/08/16 15:34:01 main.go:39: initialized configuration as following:
+Service2020/08/16 15:34:01 main.go:42: connecting to database...
+Service2020/08/16 15:34:01 main.go:53: database connected & auto migrated...
+Service2020/08/16 15:34:01 main.go:63: initializing echo router...
+Service2020/08/16 15:34:01 main.go:112: setup completed. starting up server...
+Service2020/08/16 15:34:01 main.go:114: Registered Routers: ([]*echo.Route) (len=87 cap=87) {
+ (*echo.Route)(0xc00036e750)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036eb40)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f320)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc00036f470)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fb30)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2300)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fa10)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e390)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ef00)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036efc0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f020)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f5f0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f770)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f890)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fe00)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ff20)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2060)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e510)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f140)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f1a0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f650)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f9b0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e630)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ecc0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f080)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fa70)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fda0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a22a0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e3f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ec60)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f4d0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f6b0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fb90)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc00036fbf0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc00036f710)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e450)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e7b0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e810)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e870)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036eab0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f200)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f8f0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e330)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc00036ea50)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2360)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036eea0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f7d0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fd40)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a21e0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ec00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f260)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f590)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2420)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e570)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e5d0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e990)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ef60)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f830)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fad0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e690)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ed20)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f950)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fec0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2180)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f0e0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2480)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc0003a2240)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a23c0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a2120)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e930)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e9f0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ee40)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f380)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc00036f410)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fc50)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc00036ff80)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036eba0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fe60)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036fce0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e4b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e6f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036e8d0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ed80)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036ede0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00036f2c0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc00036f530)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a20c0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
+Service2020/08/16 15:38:49 main.go:32: initializing configuration...
+Service2020/08/16 15:38:49 main.go:39: initialized configuration as following:
+Service2020/08/16 15:38:49 main.go:42: connecting to database...
+Service2020/08/16 15:38:49 main.go:53: database connected & auto migrated...
+Service2020/08/16 15:38:49 main.go:63: initializing echo router...
+Service2020/08/16 15:38:49 main.go:112: setup completed. starting up server...
+Service2020/08/16 15:38:49 main.go:114: Registered Routers: ([]*echo.Route) (len=87 cap=87) {
+ (*echo.Route)(0xc0003910e0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc000391830)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003919b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000390810)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390870)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390de0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390f00)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390a20)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003913b0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391da0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391c20)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000398000)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390270)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390ba0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390d80)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390f60)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000398060)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390390)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003903f0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003904b0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003916b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391b00)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391c80)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000398180)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390960)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390b40)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390c60)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391470)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390c00)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391770)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391a10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc000391f80)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390d20)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390fc0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391140)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc000390e40)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003911a0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc000391290)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003915f0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390330)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390630)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003908d0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003909c0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391a70)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc000391020)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003918f0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391b60)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391bc0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390150)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000390450)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390510)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390750)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391ce0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003981e0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003901b0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390690)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391410)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391710)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391650)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391890)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003982a0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc000391e60)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390570)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003914d0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391530)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391590)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003980c0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000398120)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391ec0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390a80)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390ae0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003917d0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391950)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391080)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391230)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003912f0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391d40)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390210)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003906f0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390cc0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000390ea0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003902d0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003905d0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003907b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391350)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000391f20)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000398240)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
+Service2020/08/16 16:00:28 main.go:32: initializing configuration...
+Service2020/08/16 16:00:28 main.go:39: initialized configuration as following:
+Service2020/08/16 16:00:28 main.go:42: connecting to database...
+Service2020/08/16 16:00:28 main.go:53: database connected & auto migrated...
+Service2020/08/16 16:00:28 main.go:63: initializing echo router...
+Service2020/08/16 16:00:28 main.go:113: setup completed. starting up server...
+Service2020/08/16 16:00:28 main.go:115: Registered Routers: ([]*echo.Route) (len=88 cap=88) {
+ (*echo.Route)(0xc000337bc0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4180)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a41e0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4300)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc0003a4510)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a46f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4a50)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4b70)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc0003a4bd0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc0003a4de0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a50e0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337470)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337c20)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a48d0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5140)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5320)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5380)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337590)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337830)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337890)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a43f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4570)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4ab0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4fc0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5020)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337e60)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337410)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337aa0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337f80)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4750)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4810)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4ea0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a53e0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/school/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc000337290)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000337710)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337c80)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a45d0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003374d0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337650)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4060)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4240)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc0003a4e40)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337da0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4630)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337770)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337b00)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337b60)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337e00)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a51a0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337950)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003379b0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4690)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4990)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5080)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003375f0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a52c0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337d40)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4450)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4b10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc0003a4c60)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4d80)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003373b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337530)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003376b0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a40c0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4120)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a44b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4930)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4d20)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5260)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003378f0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337ce0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337f20)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4870)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003372f0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003377d0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4000)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4390)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a49f0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4cc0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a4f00)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337350)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337a10)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000337ec0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a42a0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc0003a47b0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003a5440)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc0003a5200)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
+Service2020/08/16 16:02:24 main.go:32: initializing configuration...
+Service2020/08/16 16:02:24 main.go:39: initialized configuration as following:
+Service2020/08/16 16:02:24 main.go:42: connecting to database...
+Service2020/08/16 16:02:24 main.go:53: database connected & auto migrated...
+Service2020/08/16 16:02:24 main.go:63: initializing echo router...
+Service2020/08/16 16:02:24 main.go:113: setup completed. starting up server...
+Service2020/08/16 16:02:24 main.go:115: Registered Routers: ([]*echo.Route) (len=88 cap=88) {
+ (*echo.Route)(0xc000317230)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a330)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317620)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317740)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317f50)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a4b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a510)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000316ed0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317050)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003171d0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a630)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/user/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000317da0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc000317e90)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a030)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a780)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ad80)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317410)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003175c0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317b60)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ae40)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000316f30)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a210)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a840)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a8a0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a900)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039aea0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003178c0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003179e0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a150)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317980)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a090)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a390)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a570)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000316db0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000317170)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317860)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003177a0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317920)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317a40)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a450)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a690)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc000316f90)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003173b0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317530)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039aa20)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039aae0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039af00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/school/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc00039a6f0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=17) "/api/user/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc0003170b0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317bc0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317ef0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a1b0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ac60)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000316e70)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317110)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317ce0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a5d0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a7e0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039aba0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003172f0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317350)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003176e0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a2d0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ab40)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc0003174d0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317e00)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc00039a270)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039acc0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000316ff0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317290)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317470)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=6) "/api/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317d40)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc00039a9c0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ac00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000316e10)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=4) "/api",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a0f0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317c20)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a3f0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/user/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039af60)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc00039ade0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317800)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317aa0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317b00)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039a960)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=11) "/api/school",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc00039ad20)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=13) "/api/school/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317680)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=9) "/api/auth",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317c80)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=11) "/api/auth/*",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ }),
+ (*echo.Route)(0xc000317fb0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=9) "/api/user",
+  Name: (string) (len=43) "github.com/labstack/echo.(*Group).Use.func1"
+ })
+}
