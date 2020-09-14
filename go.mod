@@ -13,6 +13,7 @@ require (
 	github.com/labstack/gommon v0.3.0 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/silenceper/wechat/v2 v2.0.2 // indirect
+	github.com/swaggo/swag v1.6.7 // indirect
 	golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de
 	gopkg.in/go-playground/validator.v9 v9.31.0
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"database/sql"
 	"github.com/labstack/echo"
 	"net/http"
 )
@@ -12,14 +11,20 @@ type User struct {
 
 	Email    string          `json:"email" gorm:"unique" sql:"index"`
 	Password string          `json:"-"`
-	Phone    *sql.NullString `json:"phone"`
+	Phone    *string         `json:"phone"`
 
 	FirstName string `json:"firstName"`
 	LastName  string `json:"lastName"`
 	Birthday  string `json:"birthday"`
 
-	Schools []*School `json:"school" gorm:"many2many:users_schools"`
+	Schools []*School `json:"schools" gorm:"many2many:users_schools"`
 	Tags    []*Tag    `json:"tags" gorm:"many2many:users_tags"`
+}
+
+func userGetAll(c echo.Context) error {
+	var users []User
+	DB.Preload("Schools").Preload("Tags").Limit(10).Find(&users)
+	return c.JSON(http.StatusOK, users)
 }
 
 func userGetProfile(c echo.Context) error {

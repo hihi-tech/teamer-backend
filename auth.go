@@ -1,7 +1,6 @@
 package main
 
 import (
-	"database/sql"
 	"encoding/hex"
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
@@ -10,6 +9,7 @@ import (
 	"github.com/labstack/echo"
 	"golang.org/x/crypto/bcrypt"
 	"net/http"
+	"strconv"
 	"time"
 )
 
@@ -18,7 +18,7 @@ type UserLoginRequestForm struct {
 	Password string `json:"password" validate:"required"`
 }
 
-type UserLoginResponse struct {
+type UserAuthResponse struct {
 	Token string `json:"token"`
 	Details *User `json:"details"`
 }
@@ -31,6 +31,9 @@ type UserRegisterRequestForm struct {
 	FirstName string `json:"firstName" validate:"max=64,required"`
 	LastName  string `json:"lastName" validate:"max=64,required"`
 	Birthday  string `json:"birthday" validate:"max=24,required"`
+
+	Schools []uint `json:"schools"`
+	//Tags []uint `json:"tags"`
 }
 
 func createJwt(user *User) (string, error) {
@@ -76,7 +79,7 @@ func authLoginHandler(c echo.Context) error {
 
 	if err := bcrypt.CompareHashAndPassword(password, []byte(form.Password)); err != nil {
 		LogService.Println("login: password mismatch: " + err.Error() + spew.Sdump(user) + spew.Sdump(form))
-		return echo.NewHTTPError(http.StatusUnauthorized, "password mismatch")
+		return echo.NewHTTPError(http.StatusUnauthorized, "电子邮箱或密码错误")
 	}
 
 	t, err := createJwt(&user)
@@ -85,7 +88,7 @@ func authLoginHandler(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusInternalServerError, "internal error")
 	}
 
-	return c.JSON(http.StatusOK, UserLoginResponse{
+	return c.JSON(http.StatusOK, UserAuthResponse{
 		Token:   t,
 		Details: &user,
 	})
@@ -130,17 +133,27 @@ func authRegisterHandler(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, "failed to create hash from password: use a longer password")
 	}
 
+	var schools []*School
+	for _, school := range form.Schools {
+		var foundSchool School
+		if err := DB.First(&foundSchool, school).Error; err != nil {
+			spew.Dump(err)
+			return echo.NewHTTPError(http.StatusBadRequest, "cannot found school with id " + strconv.Itoa(int(school)))
+		}
+		schools = append(schools, &foundSchool)
+	}
+
 	toSave := User{
 		Email:    form.Email,
 		Password: hex.EncodeToString(hashedPassword),
-
+		Birthday: form.Birthday,
 		FirstName: form.FirstName,
 		LastName: form.LastName,
+		Phone: form.Phone,
+		Schools: schools,
 	}
 
-	if form.Phone != nil {
-		toSave.Phone = &sql.NullString{Valid: true, String: *form.Phone}
-	}
+	spew.Dump(form, toSave)
 
 	// calculate email verification token
 	// Create token
@@ -170,8 +183,8 @@ func authRegisterHandler(c echo.Context) error {
 			return fmt.Errorf("failed to send verification email")
 		}
 
-		if DB.Create(&toSave).Error != nil {
-			LogDb.Println("register: failed to create DB record: " + spew.Sdump(form))
+		if err := DB.Create(&toSave).Error; err != nil {
+			LogDb.Println("register: failed to create DB record: " + spew.Sdump(err))
 			//return echo.NewHTTPError(http.StatusInternalServerError, "failed to create DB record")
 			return fmt.Errorf("failed to create DB record")
 		}
@@ -180,16 +193,23 @@ func authRegisterHandler(c echo.Context) error {
 
 	if err != nil {
 		LogService.Println("register: database transaction error " + spew.Sdump(toSave))
-		return echo.NewHTTPError(http.StatusBadRequest, "failed to create user")
+		return echo.NewHTTPError(http.StatusInternalServerError, "failed to create user")
 	}
 
 	loginJwt, err := createJwt(&toSave)
 	if err != nil {
 		LogService.Println("register: failed to create jwt token for user " + spew.Sdump(toSave))
-		return echo.NewHTTPError(http.StatusBadRequest, "failed to create jwt token")
+		return echo.NewHTTPError(http.StatusInternalServerError, "failed to create jwt token")
 	}
 
-	return c.JSON(http.StatusAccepted, map[string]string{
-		"token": loginJwt,
+	var savedUser User
+	if err := DB.First(&savedUser, toSave.ID).Error; err != nil {
+		LogDb.Println("register: failed to get saved user " + spew.Sdump(toSave) + spew.Sdump(err))
+		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user details")
+	}
+
+	return c.JSON(http.StatusAccepted, UserAuthResponse{
+		Token:   loginJwt,
+		Details: &savedUser,
 	})
 }

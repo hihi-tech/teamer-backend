@@ -1,0 +1,19 @@
+server:
+  address: ":8090"
+  hostname: "https://dev.teamer.cc"
+  cors:
+    enabled: true
+    allowOrigins:
+      - "https://dev.teamer.cc"
+      - "http://localhost.internal.imgal.vin"
+#      - "http://localhost"
+
+database:
+  dsn: "root:root@(localhost)/teamer?charset=utf8&parseTime=True&loc=Local"
+
+email:
+  smtp:
+    hostname: smtpdm.aliyun.com
+    port: 465
+    username: username@example.com
+    password: password

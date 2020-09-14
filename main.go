@@ -95,18 +95,23 @@ func main() {
 			auth.GET("/verify/email/:key", authVerifyEmailHandler)
 			auth.POST("/register", authRegisterHandler)
 		}
-		users := api.Group("/user", MiddlewareRequireAuth...)
+		users := api.Group("/user")
 		{
 			users.GET("/ok", func(c echo.Context) error {
 				return c.NoContent(http.StatusOK)
-			})
-			users.GET("/profile", userGetProfile)
-			users.PATCH("/profile", userPatchProfile)
+			}, MiddlewareRequireAuth...)
+			users.GET("/all", userGetAll)
+			users.GET("/profile", userGetProfile, MiddlewareRequireAuth...)
+			users.PATCH("/profile", userPatchProfile, MiddlewareRequireAuth...)
 		}
 		schools := api.Group("/school", MiddlewareRequireAuth...)
 		{
 			schools.GET("/search", schoolSearch)
 			schools.PUT("", schoolAdd)
+		}
+		meetups := api.Group("/meetups", MiddlewareRequireAuth...)
+		{
+			meetups.PUT("", meetupCreateMeetup)
 		}
 	}
 

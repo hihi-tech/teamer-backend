@@ -3599,3 +3599,7 @@ Database2020/08/16 15:37:25 schools.go:37: add school: failed to create record o
 
 Database2020/08/16 15:37:25 schools.go:37: add school: failed to create record on db: (*mysql.MySQLError)(0xc00260dc00)(Error 1062: Duplicate entry '文溪中学' for key 'schools.name')
 
+Database2020/09/06 20:17:07 schools.go:54: add school: failed to create record on db: (*mysql.MySQLError)(0xc000458d20)(Error 1062: Duplicate entry '测试中学' for key 'schools.name')
+
+Database2020/09/06 20:17:15 schools.go:54: add school: failed to create record on db: (*mysql.MySQLError)(0xc0000b0640)(Error 1062: Duplicate entry '测试中学' for key 'schools.name')
+
