@@ -1,28 +1,13 @@
 package main
 
 import (
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"net/http"
+	"teamer/model"
 )
 
-// User describes a user object
-type User struct {
-	DBSafeModel
-
-	Email    string          `json:"email" gorm:"unique" sql:"index"`
-	Password string          `json:"-"`
-	Phone    *string         `json:"phone"`
-
-	FirstName string `json:"firstName"`
-	LastName  string `json:"lastName"`
-	Birthday  string `json:"birthday"`
-
-	Schools []*School `json:"schools" gorm:"many2many:users_schools"`
-	Tags    []*Tag    `json:"tags" gorm:"many2many:users_tags"`
-}
-
 func userGetAll(c echo.Context) error {
-	var users []User
+	var users []model.User
 	DB.Preload("Schools").Preload("Tags").Limit(10).Find(&users)
 	return c.JSON(http.StatusOK, users)
 }

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/jinzhu/gorm"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"net/http"
 	"strconv"
 	"time"
@@ -61,9 +61,9 @@ func meetupCreateMeetup(c echo.Context) error {
 	}
 
 	if err := DB.Create(&toSave).Error; err != nil {
-		LogDb.Println("create meetup: failed to create DB record: " + spew.Sdump(err))
-		//return echo.NewHTTPError(http.StatusInternalServerError, "failed to create DB record")
-		return fmt.Errorf("failed to create DB record")
+		LogDb.Println("create meetup: failed to create db record: " + spew.Sdump(err))
+		//return echo.NewHTTPError(http.StatusInternalServerError, "failed to create db record")
+		return fmt.Errorf("failed to create db record")
 	}
 
 	return c.JSON(http.StatusOK, toSave)

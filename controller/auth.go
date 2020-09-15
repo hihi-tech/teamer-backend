@@ -1,4 +1,4 @@
-package main
+package controllers
 
 import (
 	"encoding/hex"
@@ -6,10 +6,11 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/jinzhu/gorm"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"golang.org/x/crypto/bcrypt"
 	"net/http"
 	"strconv"
+	"teamer"
 	"time"
 )
 
@@ -19,8 +20,8 @@ type UserLoginRequestForm struct {
 }
 
 type UserAuthResponse struct {
-	Token string `json:"token"`
-	Details *User `json:"details"`
+	Token string       `json:"token"`
+	Details *main.User `json:"details"`
 }
 
 type UserRegisterRequestForm struct {
@@ -36,7 +37,7 @@ type UserRegisterRequestForm struct {
 	//Tags []uint `json:"tags"`
 }
 
-func createJwt(user *User) (string, error) {
+func createJwt(user *main.User) (string, error) {
 	// Create token
 	token := jwt.New(jwt.SigningMethodHS256)
 
@@ -48,43 +49,54 @@ func createJwt(user *User) (string, error) {
 	claims["aud"] = "service"
 
 	// Generate encoded token and send it as response.
-	t, err := token.SignedString([]byte(JWTSecret))
+	t, err := token.SignedString([]byte(main.JWTSecret))
 	if err != nil {
 		return "", err
 	}
 	return t, nil
 }
 
-func authLoginHandler(c echo.Context) error {
+// Login godoc
+// @Summary Login
+// @Description Login using Teamer credentials
+// @Tags accounts
+// @Accept json
+// @Produce  json
+// @Success 200 {object} UserAuthResponse
+// @Failure 400 {object} echo.HTTPError
+// @Failure 404 {object} echo.HTTPError
+// @Failure 500 {object} echo.HTTPError
+// @Router /auth/login [post]
+func (ct Controller) Login(c echo.Context) error {
 	var form UserLoginRequestForm
 	if err := c.Bind(&form); err != nil {
-		return DefaultBadRequestResponse
+		return main.DefaultBadRequestResponse
 	}
 	if err := c.Validate(&form); err != nil {
-		return DefaultBadRequestResponse
+		return main.DefaultBadRequestResponse
 	}
 
-	var user User
-	if err := DB.Preload("Schools").Preload("Tags").First(&user, &User{Email: form.Email}).Error; err != nil {
+	var user main.User
+	if err := main.DB.Preload("Schools").Preload("Tags").First(&user, &main.User{Email: form.Email}).Error; err != nil {
 		// the user actually exists. quit register process
-		LogService.Println("login: found user error: " + spew.Sdump(err))
+		main.LogService.Println("login: found user error: " + spew.Sdump(err))
 		return echo.NewHTTPError(http.StatusBadRequest, "no such user")
 	}
 
 	password, err := hex.DecodeString(user.Password)
 	if err != nil {
-		LogService.Println("login: failed to decode password bytes from hex string: " + err.Error())
+		main.LogService.Println("login: failed to decode password bytes from hex string: " + err.Error())
 		return echo.NewHTTPError(http.StatusInternalServerError, "internal error")
 	}
 
 	if err := bcrypt.CompareHashAndPassword(password, []byte(form.Password)); err != nil {
-		LogService.Println("login: password mismatch: " + err.Error() + spew.Sdump(user) + spew.Sdump(form))
+		main.LogService.Println("login: password mismatch: " + err.Error() + spew.Sdump(user) + spew.Sdump(form))
 		return echo.NewHTTPError(http.StatusUnauthorized, "电子邮箱或密码错误")
 	}
 
 	t, err := createJwt(&user)
 	if err != nil {
-		LogService.Println("login: failed to create jwt for user " + spew.Sdump(user) + ": " + err.Error())
+		main.LogService.Println("login: failed to create jwt for user " + spew.Sdump(user) + ": " + err.Error())
 		return echo.NewHTTPError(http.StatusInternalServerError, "internal error")
 	}
 
@@ -94,13 +106,24 @@ func authLoginHandler(c echo.Context) error {
 	})
 }
 
-func authVerifyEmailHandler(c echo.Context) error {
+// VerifyEmail godoc
+// @Summary Verify Email
+// @Description The landing page after user clicks the verify button in the register email
+// @Tags accounts
+// @Produce json
+// @Param key path string true "Verify Key"
+// @Success 200 {string}
+// @Failure 400 {object} echo.HTTPError
+// @Failure 404 {object} echo.HTTPError
+// @Failure 500 {object} echo.HTTPError
+// @Router /auth/verify/email/{key} [get]
+func (ct Controller) VerifyEmail(c echo.Context) error {
 	key := c.Param("key")
 	if key == "" {
 		return echo.NewHTTPError(http.StatusBadRequest, "missing verification key")
 	}
 	token, err := jwt.Parse(key, func(token *jwt.Token) (interface{}, error) {
-		return []byte(JWTSecret), nil
+		return []byte(main.JWTSecret), nil
 	})
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, "malformed jwt token supplied")
@@ -111,39 +134,50 @@ func authVerifyEmailHandler(c echo.Context) error {
 	return echo.NewHTTPError(http.StatusUnauthorized, "invalid token")
 }
 
-func authRegisterHandler(c echo.Context) error {
+// Register godoc
+// @Summary Register
+// @Description Register by using details provided
+// @Tags accounts
+// @Accept json
+// @Produce json
+// @Success 200 {object} UserAuthResponse
+// @Failure 400 {object} echo.HTTPError
+// @Failure 404 {object} echo.HTTPError
+// @Failure 500 {object} echo.HTTPError
+// @Router /auth/register [post]
+func (ct Controller) Register(c echo.Context) error {
 	var form UserRegisterRequestForm
 	if err := c.Bind(&form); err != nil {
-		return DefaultBadRequestResponse
+		return main.DefaultBadRequestResponse
 	}
 	if err := c.Validate(&form); err != nil {
-		return DefaultBadRequestResponse
+		return main.DefaultBadRequestResponse
 	}
 
-	var existUser User
-	if err := DB.First(&existUser, &User{Email: form.Email}).Error; err == nil {
+	var existUser main.User
+	if err := main.DB.First(&existUser, &main.User{Email: form.Email}).Error; err == nil {
 		// the user actually exists. quit register process
-		LogService.Println("register: user duplicated: existing " + spew.Sdump(existUser) + ", attempting " + spew.Sdump(form))
+		main.LogService.Println("register: user duplicated: existing " + spew.Sdump(existUser) + ", attempting " + spew.Sdump(form))
 		return echo.NewHTTPError(http.StatusBadRequest, "user already exists")
 	}
 
 	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(form.Password), bcrypt.DefaultCost)
 	if err != nil {
-		LogService.Println("register: failed to create hash from password: " + spew.Sdump(form))
+		main.LogService.Println("register: failed to create hash from password: " + spew.Sdump(form))
 		return echo.NewHTTPError(http.StatusBadRequest, "failed to create hash from password: use a longer password")
 	}
 
-	var schools []*School
+	var schools []*main.School
 	for _, school := range form.Schools {
-		var foundSchool School
-		if err := DB.First(&foundSchool, school).Error; err != nil {
+		var foundSchool main.School
+		if err := main.DB.First(&foundSchool, school).Error; err != nil {
 			spew.Dump(err)
 			return echo.NewHTTPError(http.StatusBadRequest, "cannot found school with id " + strconv.Itoa(int(school)))
 		}
 		schools = append(schools, &foundSchool)
 	}
 
-	toSave := User{
+	toSave := main.User{
 		Email:    form.Email,
 		Password: hex.EncodeToString(hashedPassword),
 		Birthday: form.Birthday,
@@ -166,25 +200,25 @@ func authRegisterHandler(c echo.Context) error {
 	claims["exp"] = time.Now().Add(time.Hour * 72).Unix()
 	claims["aud"] = "email-verify"
 	// Generate encoded token and send it as response.
-	t, err := token.SignedString([]byte(JWTSecret))
+	t, err := token.SignedString([]byte(main.JWTSecret))
 	if err != nil {
-		LogService.Println("register: failed to generate email verification token " + spew.Sdump(err))
+		main.LogService.Println("register: failed to generate email verification token " + spew.Sdump(err))
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to generate email verification token")
 	}
 
-	err = DB.Transaction(func(tx *gorm.DB) error {
-		err := sendEmail(form.Email, "Teamer 账号注册邮箱验证", "RegisterEmailVerification", map[string]string{
+	err = main.DB.Transaction(func(tx *gorm.DB) error {
+		err := main.sendEmail(form.Email, "Teamer 账号注册邮箱验证", "RegisterEmailVerification", map[string]string{
 			"User": form.Email,
-			"Link": fmt.Sprintf("%s/api/auth/verify/email/%s", Conf.Server.Hostname, t),
+			"Link": fmt.Sprintf("%s/api/auth/verify/email/%s", main.Conf.Server.Hostname, t),
 		})
 		if err != nil {
-			LogService.Println("register: failed to send register email verification: " + spew.Sdump(err))
+			main.LogService.Println("register: failed to send register email verification: " + spew.Sdump(err))
 			//return echo.NewHTTPError(http.StatusInternalServerError, "failed to send verification email")
 			return fmt.Errorf("failed to send verification email")
 		}
 
-		if err := DB.Create(&toSave).Error; err != nil {
-			LogDb.Println("register: failed to create DB record: " + spew.Sdump(err))
+		if err := main.DB.Create(&toSave).Error; err != nil {
+			main.LogDb.Println("register: failed to create DB record: " + spew.Sdump(err))
 			//return echo.NewHTTPError(http.StatusInternalServerError, "failed to create DB record")
 			return fmt.Errorf("failed to create DB record")
 		}
@@ -192,19 +226,19 @@ func authRegisterHandler(c echo.Context) error {
 	})
 
 	if err != nil {
-		LogService.Println("register: database transaction error " + spew.Sdump(toSave))
+		main.LogService.Println("register: database transaction error " + spew.Sdump(toSave))
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to create user")
 	}
 
 	loginJwt, err := createJwt(&toSave)
 	if err != nil {
-		LogService.Println("register: failed to create jwt token for user " + spew.Sdump(toSave))
+		main.LogService.Println("register: failed to create jwt token for user " + spew.Sdump(toSave))
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to create jwt token")
 	}
 
-	var savedUser User
-	if err := DB.First(&savedUser, toSave.ID).Error; err != nil {
-		LogDb.Println("register: failed to get saved user " + spew.Sdump(toSave) + spew.Sdump(err))
+	var savedUser main.User
+	if err := main.DB.First(&savedUser, toSave.ID).Error; err != nil {
+		main.LogDb.Println("register: failed to get saved user " + spew.Sdump(toSave) + spew.Sdump(err))
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user details")
 	}
 
