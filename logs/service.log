@@ -10687,3 +10687,1950 @@ Service2020/09/06 20:17:03 auth.go:126: register: user duplicated: existing (mai
  }
 }
 
+Service2020/09/15 04:16:11 main.go:48: initializing configuration...
+Service2020/09/15 04:16:11 main.go:55: initialized configuration as following:
+Service2020/09/15 04:16:11 main.go:58: connecting to database...
+Service2020/09/15 04:16:12 main.go:69: database connected & auto migrated...
+Service2020/09/15 04:16:12 main.go:79: initializing echo router...
+Service2020/09/15 04:16:12 main.go:136: setup completed. starting up server...
+Service2020/09/15 04:16:12 main.go:138: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc000eb5dd0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc000eb5fb0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054030)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054ab0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054bd0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010548d0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054cf0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5e30)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054810)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054d50)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5d70)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc001054330)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054c30)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054b10)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5d10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc000eb5e90)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5f50)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054210)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054390)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054450)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054630)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054c90)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5b30)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000eb5bf0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc001054db0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5c50)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc001054270)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054ed0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5cb0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc001054750)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054ff0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc0010547b0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010540f0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010541b0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010543f0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054510)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054e70)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054930)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5ef0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010544b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010545d0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054b70)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054e10)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054690)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc001054870)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010546f0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc001054f30)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000eb5b90)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc0010542d0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054570)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010549f0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054090)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054990)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001054f90)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ })
+}
+Service2020/09/15 04:25:33 main.go:47: initializing configuration...
+Service2020/09/15 04:25:33 main.go:54: initialized configuration as following:
+Service2020/09/15 04:25:33 main.go:57: connecting to database...
+Service2020/09/15 04:25:33 main.go:68: database connected & auto migrated...
+Service2020/09/15 04:25:33 main.go:78: initializing echo router...
+Service2020/09/15 04:25:33 main.go:135: setup completed. starting up server...
+Service2020/09/15 04:25:33 main.go:137: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc000d2be00)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2aa20)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000d2ab10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc000d2b860)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bf80)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ }),
+ (*echo.Route)(0xc000d2bc20)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2ac00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000d2b080)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b560)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bb60)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bc80)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b7a0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b920)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b800)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b2c0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b5c0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b680)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc000d2aea0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2af00)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e24000)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc000d2b980)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2acf0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc000d2b6e0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc000d2b260)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b440)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bce0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2be60)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2ad50)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc000d2ae40)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b620)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b8c0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b9e0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bb00)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b020)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bf20)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2aa80)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc000d2afc0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b140)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b1a0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bbc0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2ade0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b200)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b740)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2baa0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bd40)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2ac60)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc000d2b4a0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b500)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b380)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bda0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2bec0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2ab70)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc000d2af60)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2b320)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ })
+}
+Service2020/09/15 04:27:46 main.go:47: initializing configuration...
+Service2020/09/15 04:27:46 main.go:54: initialized configuration as following:
+Service2020/09/15 04:27:46 main.go:57: connecting to database...
+Service2020/09/15 04:27:46 main.go:68: database connected & auto migrated...
+Service2020/09/15 04:27:46 main.go:78: initializing echo router...
+Service2020/09/15 04:27:46 main.go:135: setup completed. starting up server...
+Service2020/09/15 04:27:46 main.go:137: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc000ec5620)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec4d80)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000ec5020)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5860)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5920)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5680)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5f80)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec4cc0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc000ec4f60)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5a40)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5ce0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5e00)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec59e0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5bc0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5440)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001040060)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ }),
+ (*echo.Route)(0xc000ec5e60)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5ec0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec4d20)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc000ec4f00)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5080)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec57a0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc000ec52c0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec53e0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec55c0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec54a0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5800)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5aa0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5b60)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010400c0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc000ec4c00)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000ec4de0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc000ec4ea0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc000ec5140)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5d40)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5f20)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec4e40)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc000ec4fc0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec51a0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5560)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec4c60)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc000ec5380)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec56e0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5320)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5980)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec50e0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5da0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5500)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec58c0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5c20)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5c80)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5260)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ec5740)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc001040000)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ })
+}
+Service2020/09/15 04:31:03 main.go:46: initializing configuration...
+Service2020/09/15 04:31:03 main.go:53: initialized configuration as following:
+Service2020/09/15 04:31:03 main.go:56: connecting to database...
+Service2020/09/15 04:31:03 main.go:67: database connected & auto migrated...
+Service2020/09/15 04:31:03 main.go:77: initializing echo router...
+Service2020/09/15 04:31:03 main.go:134: setup completed. starting up server...
+Service2020/09/15 04:31:03 main.go:136: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc000ff9830)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024090)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff90b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc000ff9590)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9890)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9fb0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9350)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff95f0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9d10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024390)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024510)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc000ff9050)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000ff91d0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000ff9470)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9710)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9770)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024270)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9110)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc000ff96b0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9b90)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc0010244b0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ }),
+ (*echo.Route)(0xc001024330)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff98f0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9c50)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff94d0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff99b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9dd0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9ef0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9bf0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc000ff9b30)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9530)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9e90)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9ad0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024210)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010242d0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9230)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc000ff93b0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9e30)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010241b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9410)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9cb0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9d70)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024450)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff97d0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010243f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9170)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc000ff9290)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc001024030)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001024150)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff92f0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc000ff9950)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9a10)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000ff9a70)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010240f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ })
+}
+Service2020/09/15 04:31:51 main.go:46: initializing configuration...
+Service2020/09/15 04:31:51 main.go:53: initialized configuration as following:
+Service2020/09/15 04:31:51 main.go:56: connecting to database...
+Service2020/09/15 04:31:51 main.go:67: database connected & auto migrated...
+Service2020/09/15 04:31:51 main.go:77: initializing echo router...
+Service2020/09/15 04:31:51 main.go:134: setup completed. starting up server...
+Service2020/09/15 04:31:51 main.go:136: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc001013050)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc0010139b0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001012f30)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc0010133b0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013ef0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010360f0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010136b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013b90)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001036330)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ }),
+ (*echo.Route)(0xc001036390)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc0010132f0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013590)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001036150)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013830)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013950)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010130b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc001013410)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001012f90)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc001013290)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013d70)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013e90)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001036030)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013350)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013470)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013cb0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013a10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc001013bf0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013fb0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001036210)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013110)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc0010135f0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013650)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013230)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001036270)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013170)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc001013770)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010361b0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001012ff0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc0010137d0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013f50)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013e30)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013710)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001012ed0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc001013a70)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc001013ad0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010131d0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013d10)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013530)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010138f0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013c50)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010362d0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013890)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001013b30)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001036090)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ })
+}
+Service2020/09/15 04:33:37 main.go:47: initializing configuration...
+Service2020/09/15 04:33:37 main.go:54: initialized configuration as following:
+Service2020/09/15 04:33:37 main.go:57: connecting to database...
+Service2020/09/15 04:33:37 main.go:68: database connected & auto migrated...
+Service2020/09/15 04:33:37 main.go:78: initializing echo router...
+Service2020/09/15 04:33:37 main.go:135: setup completed. starting up server...
+Service2020/09/15 04:33:37 main.go:137: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc001009650)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc001009dd0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060030)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060450)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010609f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009b30)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009e90)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060150)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009830)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc001060270)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060690)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010606f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060ab0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ }),
+ (*echo.Route)(0xc0010600f0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060630)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060870)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010097d0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc001009e30)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010605d0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060930)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009a70)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009bf0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009d10)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010607b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010608d0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009770)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc001009f50)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060810)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010603f0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009710)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc001060210)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc001009cb0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009d70)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009fb0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060090)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060b10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc0010099b0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060390)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060750)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060a50)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010098f0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc001009ef0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010604b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060510)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060990)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009a10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009b90)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010601b0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc0010096b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc001009890)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc001009950)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001009ad0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc0010602d0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc001060330)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ })
+}
+Service2020/09/15 04:43:13 main.go:48: initializing configuration...
+Service2020/09/15 04:43:13 main.go:55: initialized configuration as following:
+Service2020/09/15 04:43:13 main.go:58: connecting to database...
+Service2020/09/15 04:43:13 main.go:69: database connected & auto migrated...
+Service2020/09/15 04:43:13 main.go:79: initializing echo router...
+Service2020/09/15 04:43:13 main.go:136: setup completed. starting up server...
+Service2020/09/15 04:43:13 main.go:138: Registered Routers: ([]*echo.Route) (len=54 cap=54) {
+ (*echo.Route)(0xc000d2da70)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2dd70)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e264b0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26a80)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=23) "main.meetupCreateMeetup"
+ }),
+ (*echo.Route)(0xc000d2dfb0)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26030)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26690)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26630)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d710)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=13) "/api/users/ok",
+  Name: (string) (len=15) "main.main.func2"
+ }),
+ (*echo.Route)(0xc000d2de30)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2def0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e261b0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d650)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=27) "/api/auth/verify/email/:key",
+  Name: (string) (len=27) "main.authVerifyEmailHandler"
+ }),
+ (*echo.Route)(0xc000d2df50)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d950)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d9b0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2dd10)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e260f0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=19) "/api/schools/search",
+  Name: (string) (len=17) "main.schoolSearch"
+ }),
+ (*echo.Route)(0xc000d2d6b0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=18) "/api/auth/register",
+  Name: (string) (len=24) "main.authRegisterHandler"
+ }),
+ (*echo.Route)(0xc000d2d8f0)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e263c0)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26a20)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26270)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e265d0)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e266f0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26b10)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=10) "/swagger/*",
+  Name: (string) (len=52) "github.com/swaggo/echo-swagger.EchoWrapHandler.func1"
+ }),
+ (*echo.Route)(0xc000d2d770)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=14) "/api/users/all",
+  Name: (string) (len=15) "main.userGetAll"
+ }),
+ (*echo.Route)(0xc000e26150)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=14) "main.schoolAdd"
+ }),
+ (*echo.Route)(0xc000d2dbf0)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2dcb0)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26210)({
+  Method: (string) (len=6) "DELETE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d590)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=1) "/",
+  Name: (string) (len=15) "main.main.func1"
+ }),
+ (*echo.Route)(0xc000d2dad0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2de90)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26330)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26450)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26570)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e267b0)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e268d0)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26990)({
+  Method: (string) (len=5) "TRACE",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2db30)({
+  Method: (string) (len=8) "PROPFIND",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26090)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d7d0)({
+  Method: (string) (len=3) "GET",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=19) "main.userGetProfile"
+ }),
+ (*echo.Route)(0xc000e26810)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d890)({
+  Method: (string) (len=7) "CONNECT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2da10)({
+  Method: (string) (len=7) "OPTIONS",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26750)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26930)({
+  Method: (string) (len=3) "PUT",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2d5f0)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=15) "/api/auth/login",
+  Name: (string) (len=21) "main.authLoginHandler"
+ }),
+ (*echo.Route)(0xc000d2d830)({
+  Method: (string) (len=5) "PATCH",
+  Path: (string) (len=18) "/api/users/profile",
+  Name: (string) (len=21) "main.userPatchProfile"
+ }),
+ (*echo.Route)(0xc000d2dc50)({
+  Method: (string) (len=6) "REPORT",
+  Path: (string) (len=12) "/api/schools",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000d2ddd0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=14) "/api/schools/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e262d0)({
+  Method: (string) (len=4) "HEAD",
+  Path: (string) (len=12) "/api/meetups",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ }),
+ (*echo.Route)(0xc000e26870)({
+  Method: (string) (len=4) "POST",
+  Path: (string) (len=14) "/api/meetups/*",
+  Name: (string) (len=39) "github.com/labstack/echo/v4.glob..func1"
+ })
+}
+Service2020/09/15 17:05:59 controller.go:38: connecting to database...

@@ -1,66 +1,46 @@
 package main
 
 import (
-	"github.com/davecgh/go-spew/spew"
 	"github.com/jinzhu/configor"
-	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
+	"github.com/swaggo/echo-swagger"
 	"gopkg.in/go-playground/validator.v9"
-	"gopkg.in/gomail.v2"
 	"log"
 	"net/http"
+	"teamer/controller"
+	"teamer/model"
 	"time"
 )
 
-var (
-	LogDb *log.Logger
-	LogService *log.Logger
-	LogWeChat *log.Logger
+var Conf model.Config
 
-	DB *gorm.DB
-	MailDialer *gomail.Dialer
-	Conf Config
-)
+// @title Teamer API
+// @version 0.0.1-alpha.1
+// @description.markdown This is the Teamer API Documentation. You can found contact information regards to the developer of this API and its corresponding documentation below. Notice that this API Documentation is being generated from the actual backend code by using [Swag](https://github.com/swaggo/swag) and its conventional comment annotation on the service implementation code. Due to such reason, there will be a small chance where inconsistencies exist in-between the API Documentation and the actual behavior of the code. The backend development team will strive to keep the API Documentation updated and accurate as possible. This notice just acts as a reminder ;)
 
+// @contact.name Galvin Gao
+// @contact.email me@galvingao.com
+
+// @host teamer.localhost
+// @BasePath /api
+// @schemes http https
+
+// @securityDefinitions.jwt JwtAuth
+// @in header
+// @name Authorization
 func main() {
-	LogDb = NewLogger("db", "Database")
-	LogService = NewLogger("service", "Service")
-	LogWeChat = NewLogger("wechat", "WeChat")
-
-	LogService.Println("initializing configuration...")
 	// load configurations
 	err := configor.Load(&Conf, "config.yml")
 	if err != nil {
-		LogDb.Panic("configuration file error: ", err)
+		log.Panicf("configuration file error: %v", err)
 	}
 
-	LogService.Println("initialized configuration as following:")
-	spew.Dump(Conf)
+	ct := controller.NewController(Conf)
 
-	LogService.Println("connecting to database...")
-	// initialize database connection
-	if DB, err = gorm.Open("mysql", Conf.Database.DSN); err != nil {
-		LogDb.Panic("failed to open database", err)
-	}
+	MiddlewareRequireAuth := ct.AuthMiddleware()
 
-	// initialize database tables
-	DB.AutoMigrate(&User{}, &Tag{}, &School{})
-
-	//DB = DB.Debug()
-
-	LogService.Println("database connected & auto migrated...")
-
-	// initialize email
-	MailDialer = gomail.NewDialer(
-		Conf.Email.SMTP.Hostname,
-		Conf.Email.SMTP.Port,
-		Conf.Email.SMTP.Username,
-		Conf.Email.SMTP.Password,
-	)
-
-	LogService.Println("initializing echo router...")
 	//// BEGIN - echo Router Declarations ////
 
 	e := echo.New()
@@ -91,33 +71,33 @@ func main() {
 	{
 		auth := api.Group("/auth")
 		{
-			auth.POST("/login", authLoginHandler)
-			auth.GET("/verify/email/:key", authVerifyEmailHandler)
-			auth.POST("/register", authRegisterHandler)
+			auth.POST("/login", ct.Login)
+			auth.GET("/verify/email/:key", ct.VerifyEmail)
+			auth.POST("/register", ct.Register)
 		}
-		users := api.Group("/user")
+		users := api.Group("/users")
 		{
 			users.GET("/ok", func(c echo.Context) error {
 				return c.NoContent(http.StatusOK)
 			}, MiddlewareRequireAuth...)
-			users.GET("/all", userGetAll)
-			users.GET("/profile", userGetProfile, MiddlewareRequireAuth...)
-			users.PATCH("/profile", userPatchProfile, MiddlewareRequireAuth...)
+			users.GET("/all", ct.UserGetAll)
+			users.GET("/profile", ct.UserGetProfile, MiddlewareRequireAuth...)
+			users.PATCH("/profile", ct.UserPatchProfile, MiddlewareRequireAuth...)
 		}
-		schools := api.Group("/school", MiddlewareRequireAuth...)
+		schools := api.Group("/schools", MiddlewareRequireAuth...)
 		{
-			schools.GET("/search", schoolSearch)
-			schools.PUT("", schoolAdd)
+			schools.GET("/search", ct.SearchSchool)
+			schools.PUT("", ct.AddSchool)
 		}
 		meetups := api.Group("/meetups", MiddlewareRequireAuth...)
 		{
-			meetups.PUT("", meetupCreateMeetup)
+			meetups.PUT("", ct.CreateMeetup)
 		}
 	}
 
-	LogService.Println("setup completed. starting up server...")
+	e.GET("/swagger/*", echoSwagger.WrapHandler)
 
-	LogService.Printf("Registered Routers: %v", spew.Sdump(e.Routes()))
+	log.Println("setup completed. starting up server...")
 
 	log.Fatalln(e.Start(Conf.Server.Address))
 }

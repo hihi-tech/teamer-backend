@@ -1,4 +1,4 @@
-package main
+package controller
 
 import (
 	"github.com/labstack/echo/v4"
@@ -6,29 +6,29 @@ import (
 	"teamer/model"
 )
 
-func userGetAll(c echo.Context) error {
+func (ct Controller) UserGetAll(c echo.Context) error {
 	var users []model.User
-	DB.Preload("Schools").Preload("Tags").Limit(10).Find(&users)
+	ct.db.Preload("Schools").Preload("Tags").Limit(10).Find(&users)
 	return c.JSON(http.StatusOK, users)
 }
 
-func userGetProfile(c echo.Context) error {
+func (ct Controller) UserGetProfile(c echo.Context) error {
 	user := getUserFromContext(c)
 	return c.JSON(http.StatusOK, &user)
 }
 
-func userPatchProfile(c echo.Context) error {
+func (ct Controller) UserPatchProfile(c echo.Context) error {
 	user := getUserFromContext(c)
-	user.Schools = []*School{
+	user.Schools = []*model.School{
 		{Name: "杭州市第一中学", Location: "杭州"},
 		{Name: "杭州市第二中学", Location: "杭州"},
 	}
-	user.Tags = []*Tag{
+	user.Tags = []*model.Tag{
 		{Name: "前端开发", Description: "就，就前端开发嘛"},
 		{Name: "后端开发", Description: "后端开发嘛诶嘿"},
 	}
-	if err := DB.Save(&user).Error; err != nil {
-		LogService.Println("patch profile: unable to save user record to db: ", err)
+	if err := ct.db.Save(&user).Error; err != nil {
+		ct.logger.Println("patch profile: unable to save user record to db: ", err)
 		return echo.NewHTTPError(http.StatusInternalServerError, "unable to save user record")
 	}
 	return c.JSON(http.StatusAccepted, &user)

@@ -1,10 +1,11 @@
-package main
+package controller
 
 import (
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/labstack/echo/v4"
 	"net/http"
+	"teamer/model"
 )
 
 type SchoolAddRequestForm struct {
@@ -16,7 +17,7 @@ type SchoolSearchRequestForm struct {
 	Query     string `query:"q" validate:"max=256,required"`
 }
 
-func schoolSearch(c echo.Context) error {
+func (ct Controller) SearchSchool(c echo.Context) error {
 	var form SchoolSearchRequestForm
 	if err := c.Bind(&form); err != nil {
 		return DefaultBadRequestResponse
@@ -25,12 +26,12 @@ func schoolSearch(c echo.Context) error {
 		return DefaultBadRequestResponse
 	}
 
-	var schools []School
-	DB.Where("name LIKE ?", fmt.Sprintf("%%%s%%", form.Query)).Limit(10).Find(&schools)
+	var schools []model.School
+	ct.db.Where("name LIKE ?", fmt.Sprintf("%%%s%%", form.Query)).Limit(10).Find(&schools)
 	return c.JSON(http.StatusOK, schools)
 }
 
-func schoolAdd(c echo.Context) error {
+func (ct Controller) AddSchool(c echo.Context) error {
 	var form SchoolAddRequestForm
 	if err := c.Bind(&form); err != nil {
 		return DefaultBadRequestResponse
@@ -39,8 +40,8 @@ func schoolAdd(c echo.Context) error {
 		return DefaultBadRequestResponse
 	}
 
-	if err := DB.Create(&School{Name: form.Name, Location: form.Location}).Error; err != nil {
-		LogDb.Println("add school: failed to create record on db: " + spew.Sdump(err))
+	if err := ct.db.Create(&model.School{Name: form.Name, Location: form.Location}).Error; err != nil {
+		ct.logger.Println("add school: failed to create record on db: " + spew.Sdump(err))
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to create record on db")
 	}
 

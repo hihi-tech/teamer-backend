@@ -1,4 +1,4 @@
-package main
+package controller
 
 import (
 	"fmt"
@@ -7,6 +7,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"net/http"
 	"strconv"
+	"teamer/model"
 	"time"
 )
 
@@ -19,8 +20,8 @@ type Meetup struct {
 
 	Start *time.Time `json:"start"`
 	End *time.Time `json:"end"`
-	Members []User `json:"members"`
-	Tags []Tag `json:"tags"`
+	Members []model.User `json:"members"`
+	Tags []model.Tag `json:"tags"`
 }
 
 type CreateMeetupRequestForm struct {
@@ -33,7 +34,7 @@ type CreateMeetupRequestForm struct {
 	Members []uint `json:"members"`
 }
 
-func meetupCreateMeetup(c echo.Context) error {
+func (ct Controller) CreateMeetup(c echo.Context) error {
 	var form CreateMeetupRequestForm
 	if err := c.Bind(&form); err != nil {
 		return DefaultBadRequestResponse
@@ -50,18 +51,18 @@ func meetupCreateMeetup(c echo.Context) error {
 		End: form.End,
 	}
 
-	var users []*User
+	var users []*model.User
 	for _, member := range form.Members {
-		var foundUser User
-		if err := DB.First(&foundUser, member).Error; err != nil {
+		var foundUser model.User
+		if err := ct.db.First(&foundUser, member).Error; err != nil {
 			spew.Dump(err)
 			return echo.NewHTTPError(http.StatusBadRequest, "cannot found member with id " + strconv.Itoa(int(member)))
 		}
 		users = append(users, &foundUser)
 	}
 
-	if err := DB.Create(&toSave).Error; err != nil {
-		LogDb.Println("create meetup: failed to create db record: " + spew.Sdump(err))
+	if err := ct.db.Create(&toSave).Error; err != nil {
+		ct.logger.Println("create meetup: failed to create db record: " + spew.Sdump(err))
 		//return echo.NewHTTPError(http.StatusInternalServerError, "failed to create db record")
 		return fmt.Errorf("failed to create db record")
 	}
