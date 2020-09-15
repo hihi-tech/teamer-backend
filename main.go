@@ -10,6 +10,7 @@ import (
 	"log"
 	"net/http"
 	"teamer/controller"
+	_ "teamer/docs"
 	"teamer/model"
 	"time"
 )
@@ -18,7 +19,7 @@ var Conf model.Config
 
 // @title Teamer API
 // @version 0.0.1-alpha.1
-// @description.markdown This is the Teamer API Documentation. You can found contact information regards to the developer of this API and its corresponding documentation below. Notice that this API Documentation is being generated from the actual backend code by using [Swag](https://github.com/swaggo/swag) and its conventional comment annotation on the service implementation code. Due to such reason, there will be a small chance where inconsistencies exist in-between the API Documentation and the actual behavior of the code. The backend development team will strive to keep the API Documentation updated and accurate as possible. This notice just acts as a reminder ;)
+// @description This is the Teamer API Documentation. You can found contact information regards to the developer of this API and its corresponding documentation below. Notice that this API Documentation is being generated from the actual backend code by using [Swag](https://github.com/swaggo/swag) and its conventional comment annotation on the service implementation code. Due to such reason, there will be a small chance where inconsistencies exist in-between the API Documentation and the actual behavior of the code. The backend development team will strive to keep the API Documentation updated and accurate as possible. This notice just acts as a reminder ;)
 
 // @contact.name Galvin Gao
 // @contact.email me@galvingao.com
@@ -27,7 +28,7 @@ var Conf model.Config
 // @BasePath /api
 // @schemes http https
 
-// @securityDefinitions.jwt JwtAuth
+// @securityDefinitions.apikey JwtAuth
 // @in header
 // @name Authorization
 func main() {

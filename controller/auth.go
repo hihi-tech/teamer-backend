@@ -59,13 +59,14 @@ func (ct Controller) CreateJwt(user *model.User) (string, error) {
 // Login godoc
 // @Summary Login
 // @Description Login using Teamer credentials
-// @Tags accounts
+// @Tags Account
 // @Accept json
 // @Produce  json
+// @Param body body UserLoginRequestForm true "Request body"
 // @Success 200 {object} UserAuthResponse
-// @Failure 400 {object} echo.HTTPError
-// @Failure 404 {object} echo.HTTPError
-// @Failure 500 {object} echo.HTTPError
+// @Failure 400 {object} model.HTTPError
+// @Failure 404 {object} model.HTTPError
+// @Failure 500 {object} model.HTTPError
 // @Router /auth/login [post]
 func (ct Controller) Login(c echo.Context) error {
 	var form UserLoginRequestForm
@@ -109,13 +110,13 @@ func (ct Controller) Login(c echo.Context) error {
 // VerifyEmail godoc
 // @Summary Verify Email
 // @Description The landing page after user clicks the verify button in the register email
-// @Tags accounts
+// @Tags Account
 // @Produce json
 // @Param key path string true "Verify Key"
-// @Success 200 {string}
-// @Failure 400 {object} echo.HTTPError
-// @Failure 404 {object} echo.HTTPError
-// @Failure 500 {object} echo.HTTPError
+// @Success 200 {string} string "successfully verified token"
+// @Failure 400 {object} model.HTTPError
+// @Failure 404 {object} model.HTTPError
+// @Failure 500 {object} model.HTTPError
 // @Router /auth/verify/email/{key} [get]
 func (ct Controller) VerifyEmail(c echo.Context) error {
 	key := c.Param("key")
@@ -137,13 +138,14 @@ func (ct Controller) VerifyEmail(c echo.Context) error {
 // Register godoc
 // @Summary Register
 // @Description Register by using details provided
-// @Tags accounts
+// @Tags Account
 // @Accept json
 // @Produce json
+// @Param body body UserRegisterRequestForm true "Request body"
 // @Success 200 {object} UserAuthResponse
-// @Failure 400 {object} echo.HTTPError
-// @Failure 404 {object} echo.HTTPError
-// @Failure 500 {object} echo.HTTPError
+// @Failure 400 {object} model.HTTPError
+// @Failure 404 {object} model.HTTPError
+// @Failure 500 {object} model.HTTPError
 // @Router /auth/register [post]
 func (ct Controller) Register(c echo.Context) error {
 	var form UserRegisterRequestForm

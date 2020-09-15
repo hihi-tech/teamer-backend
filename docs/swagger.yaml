@@ -1,0 +1,462 @@
+basePath: /api
+definitions:
+  controller.CreateMeetupRequestForm:
+    properties:
+      description:
+        type: string
+      end:
+        type: string
+      location:
+        type: string
+      members:
+        items:
+          type: integer
+        type: array
+      name:
+        type: string
+      start:
+        type: string
+    required:
+    - name
+    type: object
+  controller.UserAuthResponse:
+    properties:
+      details:
+        $ref: '#/definitions/model.User'
+        type: object
+      token:
+        type: string
+    type: object
+  controller.UserLoginRequestForm:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - password
+    type: object
+  controller.UserRegisterRequestForm:
+    properties:
+      birthday:
+        type: string
+      email:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      password:
+        type: string
+      phone:
+        type: string
+      schools:
+        items:
+          type: integer
+        type: array
+    required:
+    - birthday
+    - email
+    - firstName
+    - lastName
+    - password
+    - phone
+    type: object
+  model.HTTPError:
+    type: object
+  model.Meetup:
+    properties:
+      description:
+        type: string
+      end:
+        type: string
+      location:
+        type: string
+      members:
+        items:
+          $ref: '#/definitions/model.User'
+        type: array
+      name:
+        type: string
+      start:
+        type: string
+      tags:
+        items:
+          $ref: '#/definitions/model.Tag'
+        type: array
+    type: object
+  model.School:
+    properties:
+      created:
+        type: string
+      id:
+        type: integer
+      location:
+        description: 'Location is the administration assignment of the current object.
+          Example: `北京` for `北京大学`'
+        type: string
+      name:
+        type: string
+      updated:
+        type: string
+    type: object
+  model.Tag:
+    properties:
+      created:
+        type: string
+      description:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      updated:
+        type: string
+    type: object
+  model.User:
+    properties:
+      birthday:
+        type: string
+      email:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      phone:
+        type: string
+      schools:
+        items:
+          $ref: '#/definitions/model.School'
+        type: array
+      tags:
+        items:
+          $ref: '#/definitions/model.Tag'
+        type: array
+    type: object
+host: teamer.localhost
+info:
+  contact:
+    email: me@galvingao.com
+    name: Galvin Gao
+  description: This is the Teamer API Documentation. You can found contact information
+    regards to the developer of this API and its corresponding documentation below.
+    Notice that this API Documentation is being generated from the actual backend
+    code by using [Swag](https://github.com/swaggo/swag) and its conventional comment
+    annotation on the service implementation code. Due to such reason, there will
+    be a small chance where inconsistencies exist in-between the API Documentation
+    and the actual behavior of the code. The backend development team will strive
+    to keep the API Documentation updated and accurate as possible. This notice just
+    acts as a reminder ;)
+  license: {}
+  title: Teamer API
+  version: 0.0.1-alpha.1
+paths:
+  /auth/login:
+    post:
+      consumes:
+      - application/json
+      description: Login using Teamer credentials
+      parameters:
+      - description: Request body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/controller.UserLoginRequestForm'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.UserAuthResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      summary: Login
+      tags:
+      - Account
+  /auth/register:
+    post:
+      consumes:
+      - application/json
+      description: Register by using details provided
+      parameters:
+      - description: Request body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/controller.UserRegisterRequestForm'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.UserAuthResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      summary: Register
+      tags:
+      - Account
+  /auth/verify/email/{key}:
+    get:
+      description: The landing page after user clicks the verify button in the register
+        email
+      parameters:
+      - description: Verify Key
+        in: path
+        name: key
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: successfully verified token
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      summary: Verify Email
+      tags:
+      - Account
+  /meetups:
+    put:
+      consumes:
+      - application/json
+      description: Create a meetup
+      parameters:
+      - description: Request body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/controller.CreateMeetupRequestForm'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Meetup'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      security:
+      - JwtAuth: []
+      summary: Create a meetup
+      tags:
+      - Meetup
+  /schools:
+    put:
+      consumes:
+      - application/json
+      description: Add a school
+      parameters:
+      - description: Request body
+        in: body
+        name: body
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.School'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      security:
+      - JwtAuth: []
+      summary: Add a school
+      tags:
+      - School
+  /schools/search:
+    get:
+      consumes:
+      - application/json
+      description: Search a school
+      parameters:
+      - description: Search query
+        in: query
+        name: q
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/model.School'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      security:
+      - JwtAuth: []
+      summary: Search a school
+      tags:
+      - School
+  /users/all:
+    get:
+      consumes:
+      - application/json
+      description: Get all user information to display in discover page. Notice that
+        this API is subject to change in the future due to security issues of exposing
+        all users directly.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/model.User'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      security:
+      - JwtAuth: []
+      summary: Get all users
+      tags:
+      - User
+  /users/profile:
+    get:
+      consumes:
+      - application/json
+      description: Get current user profile
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.User'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      security:
+      - JwtAuth: []
+      summary: Get current User profile
+      tags:
+      - User
+    patch:
+      consumes:
+      - application/json
+      description: Patch current user profile
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.User'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError'
+      security:
+      - JwtAuth: []
+      summary: Patch current User profile
+      tags:
+      - User
+schemes:
+- http
+- https
+securityDefinitions:
+  JwtAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

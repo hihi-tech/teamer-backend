@@ -3,26 +3,12 @@ package controller
 import (
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/jinzhu/gorm"
 	"github.com/labstack/echo/v4"
 	"net/http"
 	"strconv"
 	"teamer/model"
 	"time"
 )
-
-type Meetup struct {
-	gorm.Model
-
-	Name string `json:"name" `
-	Description string `gorm:"type:text" json:"description"`
-	Location string `json:"location"`
-
-	Start *time.Time `json:"start"`
-	End *time.Time `json:"end"`
-	Members []model.User `json:"members"`
-	Tags []model.Tag `json:"tags"`
-}
 
 type CreateMeetupRequestForm struct {
 	Name string `json:"name" validate:"max=64,required"`
@@ -34,6 +20,19 @@ type CreateMeetupRequestForm struct {
 	Members []uint `json:"members"`
 }
 
+// CreateMeetup godoc
+// @Summary Create a meetup
+// @Description Create a meetup
+// @Tags Meetup
+// @Accept json
+// @Produce json
+// @Param body body CreateMeetupRequestForm true "Request body"
+// @Success 200 {object} model.Meetup
+// @Failure 400 {object} model.HTTPError
+// @Failure 404 {object} model.HTTPError
+// @Failure 500 {object} model.HTTPError
+// @Security JwtAuth
+// @Router /meetups [put]
 func (ct Controller) CreateMeetup(c echo.Context) error {
 	var form CreateMeetupRequestForm
 	if err := c.Bind(&form); err != nil {
@@ -43,7 +42,7 @@ func (ct Controller) CreateMeetup(c echo.Context) error {
 		return DefaultBadRequestResponse
 	}
 
-	toSave := Meetup{
+	toSave := model.Meetup{
 		Name: form.Name,
 		Description: form.Description,
 		Location: form.Location,
