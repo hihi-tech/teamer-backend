@@ -11,7 +11,7 @@ import (
 )
 
 func (ct Controller) SendEmail(recipient string, subject string, tmplName string, tmplValue map[string]string) error {
-	f, err := ioutil.ReadFile(fmt.Sprintf("templates/%s.tmpl", tmplName))
+	f, err := ioutil.ReadFile(fmt.Sprintf("../templates/%s.tmpl", tmplName))
 	if err != nil {
 		ct.logger.Printf("email: failed to read mail template %s: %s", tmplName, err)
 		return fmt.Errorf("failed to read mail template %s", tmplName)
